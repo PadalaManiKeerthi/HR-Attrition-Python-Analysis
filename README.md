@@ -1,31 +1,26 @@
-# HR Attrition Analysis - Python
+# HR Attrition Analysis using Python
 
-## 📊 Overview
-This project analyzes employee attrition using Python to identify why employees leave the company.
+## 📊 Project Overview
+Analyzed 500 employees data to understand why employees leave an organization. Performed Exploratory Data Analysis (EDA) to find key factors behind attrition.
 
-## 🛠 Tools Used
-- Python, Pandas, Matplotlib, Seaborn
-- Google Colab for Analysis
+## 🔍 Key Findings
+- 25% Overall Attrition Rate
+- 60% attrition in employees with Low Job Satisfaction (Rating 1-2)
+- Low Salary employees have higher chance of leaving
+- Provided actionable insights to improve employee retention
 
-## 📂 Files
-- `hr_dataset.csv` - 500 employees data
-- `attrition_count.png` - Attrition distribution
-- `salary_vs_attrition.png` - Salary impact
-- `satisfaction_vs_attrition.png` - Satisfaction impact
-- `analysis.py` - Python code
-
-## 🔍 Key Insights
-- **Overall Attrition: 25%** - 125 out of 500 employees left
-- **Low Satisfaction = High Attrition:** Satisfaction 1-2 unna vallu 60% velthunnaru
-- **Salary Impact:** Thakkuva salary unna vallalo attrition ekkuva
-- **Actionable:** HR should focus on satisfaction and salary hike
+## 🛠 Tech Stack
+- Python
+- Pandas, Matplotlib, Seaborn
+- Google Colab
+- GitHub
 
 ## 📈 Visualizations
-![Attrition Count](attrition_count.png)
-![Salary vs Attrition](salary_vs_attrition.png)
-![Satisfaction vs Attrition](satisfaction_vs_attrition.png)
+- Attrition Count
+- Salary vs Attrition
+- Job Satisfaction vs Attrition
 
-## 🚀 How to Run
-```bash
-pip install pandas matplotlib seaborn
-python analysis.py
+## 📁 Dataset
+Synthetic dataset of 500 employees generated for analysis purpose.
+
+Author: Padala Mani Keerthi
