@@ -1,11 +1,31 @@
-## 📌 About This Project
-Employee attrition costs companies lakhs every year. This project analyzes 500 employee records to answer one question: **Why do employees actually leave?**
+# HR Attrition Analysis - Python
 
-I built this end-to-end analysis using Python to help HR teams take data-driven decisions instead of guessing.
+## 📊 Overview
+This project analyzes employee attrition using Python to identify why employees leave the company.
 
-### 🎯 Key Findings:
-- Low job satisfaction (1-2/5) increases attrition by 3x
-- 65% of attrition comes from employees with salary < ₹40k
-- Freshers (0-2 years) are the highest risk group
+## 🛠 Tools Used
+- Python, Pandas, Matplotlib, Seaborn
+- Google Colab for Analysis
 
-This is not just a graph project, it's a business problem solved with data.
+## 📂 Files
+- `hr_dataset.csv` - 500 employees data
+- `attrition_count.png` - Attrition distribution
+- `salary_vs_attrition.png` - Salary impact
+- `satisfaction_vs_attrition.png` - Satisfaction impact
+- `analysis.py` - Python code
+
+## 🔍 Key Insights
+- **Overall Attrition: 25%** - 125 out of 500 employees left
+- **Low Satisfaction = High Attrition:** Satisfaction 1-2 unna vallu 60% velthunnaru
+- **Salary Impact:** Thakkuva salary unna vallalo attrition ekkuva
+- **Actionable:** HR should focus on satisfaction and salary hike
+
+## 📈 Visualizations
+![Attrition Count](attrition_count.png)
+![Salary vs Attrition](salary_vs_attrition.png)
+![Satisfaction vs Attrition](satisfaction_vs_attrition.png)
+
+## 🚀 How to Run
+```bash
+pip install pandas matplotlib seaborn
+python analysis.py
