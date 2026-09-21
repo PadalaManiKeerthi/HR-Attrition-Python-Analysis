@@ -1,27 +1,15 @@
 import pandas as pd
-import random
-
-print("Creating dataset...")
-
-data = []
-for i in range(500):
-    age = random.randint(22, 55)
-    salary = random.randint(25000, 90000)
-    years = random.randint(0, 10)
-    satisfaction = random.randint(1, 5)
-    
-    # Logic: Low salary + low satisfaction = high chance to leave
-    if satisfaction <= 2 and salary < 40000:
-        attrition = "Yes" if random.random() < 0.7 else "No"
-    elif years <= 2:
-        attrition = "Yes" if random.random() < 0.4 else "No"
-    else:
-        attrition = "Yes" if random.random() < 0.1 else "No"
-    
-    data.append([i+1, age, salary, years, satisfaction, attrition])
-
-df = pd.DataFrame(data, columns=["EmployeeID","Age","Salary","YearsAtCompany","Satisfaction","Attrition"])
-df.to_csv("hr_dataset.csv", index=False)
-
-print("✅ hr_dataset.csv created with 500 rows!")
-print(df.head())
+import numpy as np
+np.random.seed(42)
+n=500
+df = pd.DataFrame({
+    'EmployeeID': range(1, n+1),
+    'Age': np.random.randint(22, 60, n),
+    'Salary': np.random.randint(30000, 90000, n),
+    'Satisfaction': np.random.randint(1, 6, n),
+    'YearsAtCompany': np.random.randint(0, 15, n),
+    'Attrition': np.random.choice(['Yes','No'], n, p=[0.25, 0.75])
+})
+df.loc[df['Satisfaction'] <= 2, 'Attrition'] = np.random.choice(['Yes','No'], len(df[df['Satisfaction'] <= 2]), p=[0.6, 0.4])
+df.to_csv('hr_dataset.csv', index=False)
+print("csv ready!")
