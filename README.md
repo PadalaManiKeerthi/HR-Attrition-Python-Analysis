@@ -16,11 +16,18 @@ Analyzed 500 employees data to understand why employees leave an organization. P
 - GitHub
 
 ## 📈 Visualizations
-- Attrition Count
-- Salary vs Attrition
-- Job Satisfaction vs Attrition
+
+### 1. Attrition Count
+![Attrition Count](attrition_count.png)
+
+### 2. Salary vs Attrition
+![Salary vs Attrition](salary_vs_attrition.png)
+
+### 3. Job Satisfaction vs Attrition
+![Satisfaction vs Attrition](satisfaction_vs_attrition.png)
 
 ## 📁 Dataset
 Synthetic dataset of 500 employees generated for analysis purpose.
 
-Author: Padala Mani Keerthi
+## 👩‍💻 Author
+Padala Mani Keerthi
